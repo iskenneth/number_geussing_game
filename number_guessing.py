@@ -1,9 +1,11 @@
-import tkinter as tk
-
-root = tk.Tk()
-root.title("My First Tkinter Window")
-
-label = tk.Label(root, text="Hello, Tkinter!")
-label.pack()
-
-root.mainloop()
+#Pick a random number 1 to 10
+import random
+#Ask player to guess a number
+#When player clicks “Guess”:  
+# - If input is not a number, show error 
+# - If guess is correct, show “Correct!” and enable “Play Again”
+#  - If guess too low, say “Too low”  
+# - If guess too high, say “Too high” 
+#When player clicks “Play Again”:
+# - Pick new number
+# - Clear messages and input

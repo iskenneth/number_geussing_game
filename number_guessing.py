@@ -8,3 +8,8 @@ class NumberGuessing:
         master.title("Number Guessing Game")
 
         self.number = random.randint(1,10)
+
+        self.laber = tk.labe(master, text="Input a number from 1-10:")
+        self.label.pack()
+        self entry = tk.Entry(master)
+        self.entry.pack()

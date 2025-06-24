@@ -11,7 +11,7 @@ class NumberGuessing:
 
         self.laber = tk.labe(master, text="Input a number from 1-10:")
         self.label.pack()
-        self entry = tk.Entry(master)
+        self.entry = tk.Entry(master)
         self.entry.pack()
 
         self.guess_button = tk.Button(master, text="Prediction", command=self.guess_right)

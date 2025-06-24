@@ -13,3 +13,6 @@ class NumberGuessing:
         self.label.pack()
         self entry = tk.Entry(master)
         self.entry.pack()
+
+        self.guess_button = tk.Button(master, text="Prediction", command=self.guess_right)
+        self.guess_button.pack()

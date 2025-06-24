@@ -27,5 +27,13 @@ class NumberGuessing:
         except ValueError:
             self.feedback.config(text="Please enter a valid number!")
             return
+        if guess == self.number:
+            self.feedback.config(text="Correct!")
+            self.guess_button.config(state="disabled")
+            self.play_again_button.config(state="normal")
+        elif guess < self.number:
+            self.feedback.config(text="Taas pa onti!")
+        else:
+            self.feedback.config(text="babaan mo lang!")
         
         

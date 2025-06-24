@@ -35,5 +35,7 @@ class NumberGuessing:
             self.feedback.config(text="Taas pa onti!")
         else:
             self.feedback.config(text="babaan mo lang!")
+    def isa_pa(self):
+                
         
         

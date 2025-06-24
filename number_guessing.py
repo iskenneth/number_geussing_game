@@ -36,6 +36,11 @@ class NumberGuessing:
         else:
             self.feedback.config(text="babaan mo lang!")
     def isa_pa(self):
-                
+                self.number = random.randint(1, 10)
+        self.feedback.config(text="")
+        self.entry.delete(0, tk.END)
+        self.guess_button.config(state="normal")
+        self.play_again_button.config(state="disabled")
+
         
         

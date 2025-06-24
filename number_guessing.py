@@ -18,3 +18,7 @@ class NumberGuessing:
         self.guess_button.pack()
         self.feedback = tk.label (master, text+"")
         self.feedback.pack()
+        self.play_again_button = tk.Button(master, text="Play Again", command=self.play_again)
+        self.play_again_button.pack()
+        self.play_again_button.config(state="disabled")
+        

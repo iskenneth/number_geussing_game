@@ -21,5 +21,11 @@ class NumberGuessing:
         self.play_again_button = tk.Button(master, text="Play Again", command=self.play_again)
         self.play_again_button.pack()
         self.play_again_button.config(state="disabled")
-    def guess_checker: 
+    def guess_checker(self): 
+        try:
+            guess + int(self.entry.get())
+        except ValueError:
+            self.feedback.config(text="Please enter a valid number!")
+            return
+        
         

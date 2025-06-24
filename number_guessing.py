@@ -3,6 +3,9 @@ import random
 import tkinter as tk 
 #Ask player to guess a number
 class NumberGuessing:
+    def __init__(self, master):
+        self.master = master
+        master.title("Number Guessing Game")
 #When player clicks “Guess”:  
 # - If input is not a number, show error 
 # - If guess is correct, show “Correct!” and enable “Play Again”

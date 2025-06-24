@@ -6,11 +6,5 @@ class NumberGuessing:
     def __init__(self, master):
         self.master = master
         master.title("Number Guessing Game")
-#When player clicks “Guess”:  
-# - If input is not a number, show error 
-# - If guess is correct, show “Correct!” and enable “Play Again”
-#  - If guess too low, say “Too low”  
-# - If guess too high, say “Too high” 
-#When player clicks “Play Again”:
-# - Pick new number
-# - Clear messages and input
+
+        self.number = random.randint(1,10)

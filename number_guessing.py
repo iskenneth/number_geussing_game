@@ -1,5 +1,6 @@
 #Pick a random number 1 to 10
 import random
+import tkinter as tk 
 #Ask player to guess a number
 #When player clicks “Guess”:  
 # - If input is not a number, show error 

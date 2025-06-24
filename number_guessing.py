@@ -9,7 +9,7 @@ class NumberGuessing:
 
         self.number = random.randint(1,10)
 
-        self.laber = tk.labe(master, text="Input a number from 1-10:")
+        self.label = tk.label(master, text="Input a number from 1-10:")
         self.label.pack()
         self.entry = tk.Entry(master)
         self.entry.pack()
@@ -36,11 +36,15 @@ class NumberGuessing:
         else:
             self.feedback.config(text="babaan mo lang!")
     def isa_pa(self):
-                self.number = random.randint(1, 10)
+        self.number = random.randint(1, 10)
         self.feedback.config(text="")
         self.entry.delete(0, tk.END)
         self.guess_button.config(state="normal")
         self.play_again_button.config(state="disabled")
 
         
-        
+if __name__ == "__main__":
+    root = tk.Tk()
+    game = NumberGuessing(root)
+    root.mainloop()
+       
